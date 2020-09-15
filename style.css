@@ -1,4 +1,12 @@
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+}
+
 body {
+	font-family: Avenir, sans-serif;
 	margin: 0;
 	background-color: rgba(164, 168, 164, 0.3);
 }
@@ -93,10 +101,27 @@ h2 {
 	text-align: center;
 }
 
-.box {
-	border: 1px solid;
-	display: flex;
-	text-align: center;
-	justify-content: center;
+#pricing {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 0.5em;
 }
 
+.box1 {
+	border: 1px solid;
+	
+}
+
+.box2 {
+	border: 1px solid;
+	
+}
+
+.box3 {
+	border: 1px solid;
+	
+}
+
+h4 {
+	text-align: center;
+}
